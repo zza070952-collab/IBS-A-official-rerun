@@ -1,0 +1,70 @@
+{
+  "R_lock_sha256": "2ea0f5e250938d9c1d0ff9c669f8cf1cf7f9664358b7da021663b07337e2439d",
+  "R_packages": [
+    {
+      "package": "BayesSpace",
+      "path": "/home/asset/projects/IBS_A_OFFICIAL_RERUN_20261105/env/R_library/BayesSpace",
+      "version": "1.10.1"
+    },
+    {
+      "package": "DESeq2",
+      "path": "/home/asset/projects/IBS_A_OFFICIAL_RERUN_20261105/env/R_library/DESeq2",
+      "version": "1.40.2"
+    },
+    {
+      "package": "fgsea",
+      "path": "/home/asset/projects/IBS_A_OFFICIAL_RERUN_20261105/env/R_library/fgsea",
+      "version": "1.26.0"
+    },
+    {
+      "package": "scran",
+      "path": "/home/asset/projects/IBS_A_OFFICIAL_RERUN_20261105/env/R_library/scran",
+      "version": "1.28.2"
+    },
+    {
+      "package": "DirichletReg",
+      "path": "/home/asset/projects/IBS_A_OFFICIAL_RERUN_20261105/env/R_library/DirichletReg",
+      "version": "0.7.4"
+    },
+    {
+      "package": "RcppDist",
+      "path": "/home/asset/projects/IBS_A_OFFICIAL_RERUN_20261105/env/R_library/RcppDist",
+      "version": "0.1.1.1"
+    }
+  ],
+  "compatibility": {
+    "PKG_RESOURCES_COMPATIBILITY_FIX_20261105": {
+      "completed_at": "2026-11-05T12:42:14.462031+00:00",
+      "current_exact_distribution_ledger": "env/PYTHON_DISTRIBUTIONS_AFTER_PKG_RESOURCES_FIX_20261105.json",
+      "only_distribution_change": {
+        "setuptools": {
+          "after": "80.9.0",
+          "before": "82.0.1"
+        }
+      },
+      "original_software_gate_archive": {
+        "archive_path": "logs/PKG_RESOURCES_COMPATIBILITY_FIX_20261105/original_evidence/manifest/SOFTWARE_GATE.json",
+        "bytes": 1449,
+        "sha256": "4784c921e7ee922e1c0c03dffdc75a72f6b243870c233ebe1207428b16c3eabb"
+      },
+      "pip_check_exit": 1,
+      "preexisting_unused_package_conflicts_unchanged": true,
+      "proof": "logs/PKG_RESOURCES_COMPATIBILITY_FIX_20261105/ENVIRONMENT_FIX_STATUS.json",
+      "scope": "Original top-level fields retain initial-build facts; this append records the resource-API compatibility repair, not new model fitting or changes to R/Python analytical core versions.",
+      "status": "PASS_DEPENDENCY_COMPATIBILITY_RESTORED_NO_MODEL_CHANGE",
+      "verified_wheel_sha256": "062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922"
+    }
+  },
+  "formal_default_nrep": 50000,
+  "python_packages": {
+    "anndata": "0.10.8",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.20 | packaged by conda-forge | (main, Mar  5 2026, 16:42:22) [GCC 14.3.0]",
+    "scipy": "1.14.1",
+    "spatialdm": "0.3.1"
+  },
+  "recorded_at": "2026-11-05T05:08:31.230466+00:00",
+  "software_only_no_models_run": true,
+  "status": "PASS"
+}

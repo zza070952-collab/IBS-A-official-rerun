@@ -1,0 +1,51 @@
+{
+  "archive": "IBS_A_OFFICIAL_RERUN_CORE_REVIEW.zip",
+  "member": "files/EXECUTION_TRACE.tsv.gz",
+  "compressed_member_sha256": "209e0c55b5cb25e4fe60e388c009a1663419ac40dee841f3ad5f77bd5abfd099",
+  "uncompressed_sha256": "02e5f08ccf8aff544b8a4a304a9eb2de76d3fe40f8a25f9fb07a67861da3b6c6",
+  "data_rows": 96,
+  "columns_in_original": [
+    "event",
+    "module",
+    "source_command",
+    "input_hashes",
+    "start_iso8601",
+    "finish_iso8601",
+    "duration_seconds",
+    "exit_code",
+    "hostname",
+    "software_version",
+    "run_id",
+    "is_new_fit",
+    "reused_only_immutable_raw_inputs",
+    "output_hashes",
+    "notes",
+    "stdout_log",
+    "stderr_log"
+  ],
+  "columns_retained": [
+    "event",
+    "module",
+    "source_command",
+    "start_iso8601",
+    "finish_iso8601",
+    "duration_seconds",
+    "exit_code",
+    "software_version",
+    "run_id",
+    "is_new_fit",
+    "reused_only_immutable_raw_inputs",
+    "notes",
+    "stdout_log",
+    "stderr_log"
+  ],
+  "omitted_columns": [
+    "input_hashes",
+    "output_hashes",
+    "hostname"
+  ],
+  "rule": "All original96 START/FINISH rows retained without changing values or inventing NA timings. Only three verbose environment/provenance columns omitted from the lightweight command view; raw/reference input hashes separately retained.",
+  "inference": "These are outer workflow commands, not a substitute for all donor-native model traces.",
+  "models_run": false,
+  "current_server_check": "SSH banner failed2026-11-17; source identity comes from archived checksums, not current server inspection"
+}

@@ -1,0 +1,19 @@
+{
+  "implementation": "independent_Python_reimplementation_of_author_importer_not_MATLAB",
+  "author_commit": "cbccfecca66b7896e0595905ad3c01f4e6484ecf",
+  "Z_THRESH_SUM_UMI": -4.0,
+  "Z_THRESH_MITO": 4.0,
+  "HEMO_FRAC": "Inf",
+  "BOUNDARY_PRCTILE": 100,
+  "DIST_THRESH": "Inf_passed_but_unused_in_author_function",
+  "standard_deviation": "sample_ddof_1; propagate_nonfinite_as_MATLAB_default",
+  "mitochondrial_pattern": "case_insensitive_contains_mt-",
+  "hemoglobin_patterns": "case_sensitive_Hba-_or_Hbb-",
+  "manual_exclusions": "all_rows_all_reasons",
+  "sensitivity_absolute_z": [
+    3.5
+  ],
+  "boundary": "author_axiswise_distance_to_midpoint; percentile_100_removes_no_finite_spot",
+  "candidate_blind": true,
+  "publication_spot_target": "none_not_targeted"
+}

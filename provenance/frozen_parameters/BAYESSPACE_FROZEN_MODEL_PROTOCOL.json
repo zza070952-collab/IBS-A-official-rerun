@@ -1,0 +1,35 @@
+{
+  "version": "1.10.1",
+  "input_counts": "unaltered_integer_UMI_at_author_primary_spots",
+  "input_logcounts": "log2(1+CP10000(background_corrected_counts)); background on original rows before clip",
+  "spatialPreprocess": {
+    "log.normalize": false,
+    "assay.type": "logcounts",
+    "n.PCs": 15,
+    "n.HVGs": 2000
+  },
+  "qTune": {
+    "qs": [4, 5, 6, 7, 8],
+    "nrep": 2000,
+    "burn.in": 500
+  },
+  "q_selection": "largest signed normalized improvement above endpoint line, interior q5:7; ties lower q; flat/no improvement choose q4 with warning",
+  "formal": {
+    "nrep": 50000,
+    "burn.in": 1000,
+    "save.chain": true
+  },
+  "stability": {
+    "nrep": 50000,
+    "burn.in": 1000,
+    "save.chain": true
+  },
+  "model": "t",
+  "precision": "equal",
+  "gamma": 3,
+  "init.method": "mclust",
+  "threads": 1,
+  "seeds": "20261105+100*zero_based_fixed_donor_index; stability+1; qTune+2; PCA+3",
+  "source_manual_exclusions": "all_applied_before_this_model",
+  "candidate_blind": true
+}

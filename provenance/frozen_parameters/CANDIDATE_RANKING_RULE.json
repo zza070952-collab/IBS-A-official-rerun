@@ -1,0 +1,1714 @@
+{
+  "schema_version": 1,
+  "same_rule_for_every_gene": true,
+  "gene_specific_exceptions": false,
+  "created_at": "2026-11-05T14:14:20.177724+00:00",
+  "source_freeze_sha256": "07ae51d34b0b926d1f915972d914d17df563dc9f6af1ea24161ff37d834e5102",
+  "wide_table": "results/integrated/continuous/CONTINUOUS_EVIDENCE_WIDE.tsv.gz",
+  "wide_table_sha256": "af3a66731a0a5050bd92c3e7dfc7a6bf47c63da3a174e5d2d70a6cf1c16e2e76",
+  "columns": {
+    "locus_group": {
+      "source": "hgnc_locus_group",
+      "kind": "category",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Native approved HGNC locus group"
+    },
+    "magma_fdr": {
+      "source": "MAGMA_BH_FDR",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Original all-18333-tested-gene MAGMA BH; no post-mapping recalibration"
+    },
+    "magma_p": {
+      "source": "MAGMA_P",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Original native MAGMA gene association P"
+    },
+    "c1_fdr": {
+      "source": "Duo_IBSD_vs_HV_padj",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / padj"
+    },
+    "c1_p": {
+      "source": "Duo_IBSD_vs_HV_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / pvalue"
+    },
+    "c1_lfc": {
+      "source": "Duo_IBSD_vs_HV_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / log2FoldChange"
+    },
+    "c1_low_p": {
+      "source": "Duo_IBSD_vs_HV_qc_low_750k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / qc_low_750k_pvalue"
+    },
+    "c1_low_lfc": {
+      "source": "Duo_IBSD_vs_HV_qc_low_750k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / qc_low_750k_log2FoldChange"
+    },
+    "c1_high_p": {
+      "source": "Duo_IBSD_vs_HV_qc_high_1250k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / qc_high_1250k_pvalue"
+    },
+    "c1_high_lfc": {
+      "source": "Duo_IBSD_vs_HV_qc_high_1250k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSD_vs_HV / qc_high_1250k_log2FoldChange"
+    },
+    "c2_fdr": {
+      "source": "Duo_IBSC_vs_HV_padj",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / padj"
+    },
+    "c2_p": {
+      "source": "Duo_IBSC_vs_HV_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / pvalue"
+    },
+    "c2_lfc": {
+      "source": "Duo_IBSC_vs_HV_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / log2FoldChange"
+    },
+    "c2_low_p": {
+      "source": "Duo_IBSC_vs_HV_qc_low_750k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / qc_low_750k_pvalue"
+    },
+    "c2_low_lfc": {
+      "source": "Duo_IBSC_vs_HV_qc_low_750k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / qc_low_750k_log2FoldChange"
+    },
+    "c2_high_p": {
+      "source": "Duo_IBSC_vs_HV_qc_high_1250k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / qc_high_1250k_pvalue"
+    },
+    "c2_high_lfc": {
+      "source": "Duo_IBSC_vs_HV_qc_high_1250k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Duo_IBSC_vs_HV / qc_high_1250k_log2FoldChange"
+    },
+    "c3_fdr": {
+      "source": "Jej_IBSD_vs_HV_padj",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / padj"
+    },
+    "c3_p": {
+      "source": "Jej_IBSD_vs_HV_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / pvalue"
+    },
+    "c3_lfc": {
+      "source": "Jej_IBSD_vs_HV_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / log2FoldChange"
+    },
+    "c3_low_p": {
+      "source": "Jej_IBSD_vs_HV_qc_low_750k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / qc_low_750k_pvalue"
+    },
+    "c3_low_lfc": {
+      "source": "Jej_IBSD_vs_HV_qc_low_750k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / qc_low_750k_log2FoldChange"
+    },
+    "c3_high_p": {
+      "source": "Jej_IBSD_vs_HV_qc_high_1250k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / qc_high_1250k_pvalue"
+    },
+    "c3_high_lfc": {
+      "source": "Jej_IBSD_vs_HV_qc_high_1250k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSD_vs_HV / qc_high_1250k_log2FoldChange"
+    },
+    "c4_fdr": {
+      "source": "Jej_IBSC_vs_HV_padj",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / padj"
+    },
+    "c4_p": {
+      "source": "Jej_IBSC_vs_HV_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / pvalue"
+    },
+    "c4_lfc": {
+      "source": "Jej_IBSC_vs_HV_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / log2FoldChange"
+    },
+    "c4_low_p": {
+      "source": "Jej_IBSC_vs_HV_qc_low_750k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / qc_low_750k_pvalue"
+    },
+    "c4_low_lfc": {
+      "source": "Jej_IBSC_vs_HV_qc_low_750k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / qc_low_750k_log2FoldChange"
+    },
+    "c4_high_p": {
+      "source": "Jej_IBSC_vs_HV_qc_high_1250k_pvalue",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / qc_high_1250k_pvalue"
+    },
+    "c4_high_lfc": {
+      "source": "Jej_IBSC_vs_HV_qc_high_1250k_log2FoldChange",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Unmodified same-native-feature statistic: Jej_IBSC_vs_HV / qc_high_1250k_log2FoldChange"
+    },
+    "P1_detection": {
+      "source": "P1_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P1_strict_detection": {
+      "source": "P1_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P5_detection": {
+      "source": "P5_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P5_strict_detection": {
+      "source": "P5_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P8_detection": {
+      "source": "P8_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P8_strict_detection": {
+      "source": "P8_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P9_detection": {
+      "source": "P9_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P9_strict_detection": {
+      "source": "P9_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P10_detection": {
+      "source": "P10_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P10_strict_detection": {
+      "source": "P10_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P11_detection": {
+      "source": "P11_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P11_strict_detection": {
+      "source": "P11_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P12_detection": {
+      "source": "P12_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P12_strict_detection": {
+      "source": "P12_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    },
+    "P13_detection": {
+      "source": "P13_primary_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive normal-reference corrected detection fraction; not an IBS-control test"
+    },
+    "P13_strict_detection": {
+      "source": "P13_QC_z3.5_corrected_detection_fraction",
+      "kind": "numeric",
+      "missing_tokens": [
+        "",
+        "NA",
+        "NaN",
+        "nan",
+        "FEATURE_NOT_PRESENT"
+      ],
+      "description": "Descriptive fixed stricter-mask detection; no domain or LR model refit"
+    }
+  },
+  "derived_features": [
+    {
+      "name": "primary_donor_detection_fraction",
+      "op": "fraction_positive",
+      "inputs": [
+        "P1_detection",
+        "P5_detection",
+        "P8_detection",
+        "P9_detection",
+        "P10_detection",
+        "P11_detection",
+        "P12_detection",
+        "P13_detection"
+      ],
+      "missing": "propagate",
+      "min_nonmissing": 8,
+      "description": "Fraction of all eight normal reference donors with nonzero corrected detection; all eight must be observed",
+      "unit": "fraction_of_8_donors",
+      "role": "descriptive_summary",
+      "inferential": false
+    },
+    {
+      "name": "primary_mean_detection",
+      "op": "mean",
+      "inputs": [
+        "P1_detection",
+        "P5_detection",
+        "P8_detection",
+        "P9_detection",
+        "P10_detection",
+        "P11_detection",
+        "P12_detection",
+        "P13_detection"
+      ],
+      "missing": "propagate",
+      "min_nonmissing": 8,
+      "description": "Unweighted descriptive mean across eight donors; no pooling of spots or disease-effect inference",
+      "unit": "mean_corrected_detection_fraction",
+      "role": "descriptive_summary",
+      "inferential": false
+    },
+    {
+      "name": "strict_donor_detection_fraction",
+      "op": "fraction_positive",
+      "inputs": [
+        "P1_strict_detection",
+        "P5_strict_detection",
+        "P8_strict_detection",
+        "P9_strict_detection",
+        "P10_strict_detection",
+        "P11_strict_detection",
+        "P12_strict_detection",
+        "P13_strict_detection"
+      ],
+      "missing": "propagate",
+      "min_nonmissing": 8,
+      "description": "Fraction of all eight normal reference donors with nonzero corrected detection; all eight must be observed",
+      "unit": "fraction_of_8_donors",
+      "role": "descriptive_summary",
+      "inferential": false
+    },
+    {
+      "name": "strict_mean_detection",
+      "op": "mean",
+      "inputs": [
+        "P1_strict_detection",
+        "P5_strict_detection",
+        "P8_strict_detection",
+        "P9_strict_detection",
+        "P10_strict_detection",
+        "P11_strict_detection",
+        "P12_strict_detection",
+        "P13_strict_detection"
+      ],
+      "missing": "propagate",
+      "min_nonmissing": 8,
+      "description": "Unweighted descriptive mean across eight donors; no pooling of spots or disease-effect inference",
+      "unit": "mean_corrected_detection_fraction",
+      "role": "descriptive_summary",
+      "inferential": false
+    },
+    {
+      "name": "descriptive_best_main_fdr",
+      "op": "min",
+      "inputs": [
+        "c1_fdr",
+        "c2_fdr",
+        "c3_fdr",
+        "c4_fdr"
+      ],
+      "missing": "skip",
+      "min_nonmissing": 1,
+      "description": "Descriptive minimum of four separate native contrast BH values; NOT an across-contrast gene FDR, combined P, or independent validation",
+      "unit": "descriptive_minimum_native_contrast_BH",
+      "role": "descriptive_summary",
+      "inferential": false
+    }
+  ],
+  "eligibility": {
+    "all": [
+      {
+        "feature": "locus_group",
+        "op": "eq",
+        "value": "protein-coding gene",
+        "missing": "unknown"
+      },
+      {
+        "all": [
+          {
+            "feature": "primary_donor_detection_fraction",
+            "op": "ge",
+            "value": 0.75,
+            "missing": "unknown"
+          },
+          {
+            "feature": "strict_donor_detection_fraction",
+            "op": "ge",
+            "value": 0.75,
+            "missing": "unknown"
+          }
+        ]
+      },
+      {
+        "any": [
+          {
+            "feature": "magma_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "any": [
+              {
+                "all": [
+                  {
+                    "feature": "c1_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c1_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c1_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c1_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c1_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c2_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c2_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c2_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c2_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c2_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c3_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c3_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c3_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c3_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c3_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c4_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c4_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c4_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c4_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c4_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "grades": [
+    {
+      "label": "A",
+      "criterion": {
+        "all": [
+          {
+            "feature": "magma_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "any": [
+              {
+                "all": [
+                  {
+                    "feature": "c1_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c1_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c1_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c1_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c1_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c2_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c2_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c2_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c2_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c2_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c3_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c3_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c3_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c3_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c3_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c4_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c4_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c4_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c4_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c4_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "B",
+      "criterion": {
+        "any": [
+          {
+            "feature": "magma_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "any": [
+              {
+                "all": [
+                  {
+                    "feature": "c1_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c1_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c1_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c1_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c1_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c1_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c2_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c2_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c2_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c2_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c2_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c2_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c3_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c3_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c3_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c3_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c3_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c3_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "all": [
+                  {
+                    "feature": "c4_fdr",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c4_low_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "feature": "c4_high_p",
+                    "op": "lt",
+                    "value": 0.05,
+                    "missing": "unknown"
+                  },
+                  {
+                    "any": [
+                      {
+                        "all": [
+                          {
+                            "feature": "c4_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_low_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_high_lfc",
+                            "op": "gt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      },
+                      {
+                        "all": [
+                          {
+                            "feature": "c4_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_low_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          },
+                          {
+                            "feature": "c4_high_lfc",
+                            "op": "lt",
+                            "value": 0,
+                            "missing": "unknown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "C",
+      "criterion": {
+        "any": [
+          {
+            "feature": "magma_p",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c1_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c2_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c3_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c4_fdr",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c1_p",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c2_p",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c3_p",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          },
+          {
+            "feature": "c4_p",
+            "op": "lt",
+            "value": 0.05,
+            "missing": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "grade_match_policy": "first_matching_in_declared_order",
+  "default_grade": "NOT_PRIORITIZED",
+  "grade_order": [
+    "A",
+    "B",
+    "C",
+    "NOT_PRIORITIZED"
+  ],
+  "order": [
+    {
+      "feature": "selection_eligible",
+      "direction": "descending",
+      "missing": "last"
+    },
+    {
+      "feature": "evidence_grade",
+      "direction": "ascending",
+      "missing": "last"
+    },
+    {
+      "feature": "magma_fdr",
+      "direction": "ascending",
+      "missing": "last"
+    },
+    {
+      "feature": "descriptive_best_main_fdr",
+      "direction": "ascending",
+      "missing": "last"
+    },
+    {
+      "feature": "strict_mean_detection",
+      "direction": "descending",
+      "missing": "last"
+    },
+    {
+      "feature": "primary_mean_detection",
+      "direction": "descending",
+      "missing": "last"
+    }
+  ],
+  "measurement_status_legend": {
+    "SIGNIFICANT": "Native family-specific BH<0.05; no new joint calibration",
+    "NONSIGNIFICANT": "A test was performed and its native BH was not below 0.05",
+    "FDR_UNAVAILABLE": "Native adjusted P unavailable; retain its NA reason",
+    "UNTESTED": "No corresponding test; not a negative effect",
+    "NOT_OBSERVED": "No uniquely mapped observed source feature",
+    "NOT_APPLICABLE": "Not a uniquely mapped LR catalogue component; not negative",
+    "MULTIPLE_SOURCE_RECORDS": "Noncollapsible native records; no invented best statistic",
+    "OBSERVED_DESCRIPTIVE": "Normal detection, counts or context; no disease inference"
+  },
+  "interpretation_boundary": {
+    "rule_timing": "Authored after all new model/source freezes, before viewing per-gene rankings or old results; post-source prioritisation, not a preregistered discovery test",
+    "grade_A": "Two original statistical streams: MAGMA BH<0.05 plus at least one patient main-contrast BH<0.05 with same-sign low/main/high QC effects and both sensitivity raw P<0.05",
+    "grade_B": "Exactly one or more such supported streams without satisfying A; not two-stream confirmation",
+    "grade_C": "Nominal genetic/patient P or main patient BH support not meeting the supported-stream criterion; exploratory only, not nomination-eligible",
+    "eligibility": "Protein-coding, nonzero detection in at least 6/8 donors under both primary and fixed stricter expression masks (all eight donor fields observed), plus genetic or QC-supported patient evidence. Grade and eligibility remain separate.",
+    "sensitivity": "Overlapping fixed QC cohorts; raw sensitivity P<0.05 is nominal and does not claim sensitivity BH significance or independent replication. Exact same original bulk feature retained.",
+    "multiplicity": "Native MAGMA and four separate main DESeq2 BH families unchanged. Any-contrast selection is exploratory prioritisation; descriptive minimum is not a new gene-level or across-four-contrast FDR.",
+    "spatial": "Normal surgical reference detection is tissue context, not an IBS-control replication or proof of effect direction. Stricter-mask checks are expression/mask descriptions, not model robustness refits.",
+    "LR_and_markers": "Full LR/marker statistics, negative and untested evidence remain available but are not a mandatory gate or hidden ranking bonus. Catalogue membership or donor-pair count cannot substitute for measured disease evidence.",
+    "ranking": "Eligible rows first, then explicit A/B/C/default grade and native MAGMA BH, descriptive main BH minimum and continuous donor detection tie-breaks. Exact ties use lexical HGNC identity only. No combined statistical score.",
+    "feasibility": "Independent source-cited human-model/expression/siRNA/IBS rationale and 2-4 proposed downstream qPCR transcripts follow statistical freeze; may explain a non-first-rank nomination without altering grades/order. Honest no-target outcome allowed.",
+    "claims": "Exploratory candidate prioritisation only; no causal-gene, direct-binding, pain mechanism, efficacy or generated wet-lab evidence."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "FROZEN_CODE_ONLY_SOURCE_MATERIALIZED",
+  "prepared_at": "2026-11-17T17:44:40.825980+08:00",
+  "repository": "zza070952-collab/IBS-A-official-rerun",
+  "visibility": "private",
+  "source_date": "2026-11-08 delivered source archive; final computation archive included within it",
+  "archives": [
+    {
+      "name": "Supplementary_Source_Data.zip",
+      "sha256": "ff1a390300cdb168d75b8cbf03a396e5bc3407c417e4c209234d484d1af947f9"
+    },
+    {
+      "name": "IBS_A_OFFICIAL_RERUN_CORE_REVIEW.zip",
+      "sha256": "5b3000722a2cc21a133579949e4cf92659c79e5c32cf704a6c2b4ad89ac9645c"
+    }
+  ],
+  "source_files": 40,
+  "original_analysis_scripts_byte_identical": true,
+  "raw_data_or_models_included": false,
+  "current_server_snapshot_status": "2026-11-17 single SSH attempt failed before session; no claim of current server source identity",
+  "new_analysis_executed": false,
+  "archived_script_manifest_identity_checks": 23,
+  "reconstructed_executed_wrapper_hash_confirmed": true,
+  "new_materials": "Markdown, provenance extracts, ignore patterns and read-only source-checksum helper only"
+}

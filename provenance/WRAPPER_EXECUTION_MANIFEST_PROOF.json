@@ -1,0 +1,25 @@
+{
+  "archive": "IBS_A_OFFICIAL_RERUN_CORE_REVIEW.zip",
+  "source_member": "files/reports/final/FILES_MANIFEST.tsv.gz",
+  "manifest_uncompressed_sha256": "fa5b555372da0703e626ffc498367b807740692acc5e12f12429db855a4485a3",
+  "wrapper_sha256": "0e217a53f327e20280a912fc59f722035f19ccab053326fb31cf4a0dffdbc68d",
+  "matching_original_rows": [
+    {
+      "relative_path": "env/r_exec.sh",
+      "bytes": "275",
+      "sha256": "0e217a53f327e20280a912fc59f722035f19ccab053326fb31cf4a0dffdbc68d",
+      "sha256_basis": "REHASHED_REPORT_MANIFEST",
+      "review_package_policy": "INCLUDE",
+      "retained_on_server": "True"
+    },
+    {
+      "relative_path": "logs/PKG_RESOURCES_COMPATIBILITY_FIX_20261105/original_evidence/env/r_exec.sh",
+      "bytes": "275",
+      "sha256": "0e217a53f327e20280a912fc59f722035f19ccab053326fb31cf4a0dffdbc68d",
+      "sha256_basis": "REHASHED_REPORT_MANIFEST",
+      "review_package_policy": "INCLUDE",
+      "retained_on_server": "True"
+    }
+  ],
+  "derivation": "Literal original bootstrap heredoc; reconstructed bytes equal recorded executed-wrapper checksum, no algorithms changed"
+}
